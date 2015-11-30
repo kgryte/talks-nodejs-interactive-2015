@@ -1,0 +1,45 @@
+{
+  "name": "talk-nodejs-interactive-2015",
+  "version": "0.0.0",
+  "description": "Talk for Node.js Interactive 2015.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    },
+    {
+    	"name": "Philipp Burckhardt",
+    	"email": "pburckhardt@outlook.com"
+    },
+    {
+    	"name": "rgizz",
+    	"email": "gztown2216@yahoo.com"
+    }
+  ],
+  "scripts": {},
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/talks-nodejs-interactive-2015.git"
+  },
+  "keywords": [
+		"talk",
+		"nodejs",
+		"interactive",
+		"slides",
+		"presentation"
+	],
+  "bugs": {
+    "url": "https://github.com/kgryte/talks-nodejs-interactive-2015/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x"
+  },
+  "license": "MIT"
+}
