@@ -13,8 +13,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/white.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Code syntax highlighting -->
 	<link rel="stylesheet" href="css/code/zenburn.css">
@@ -33,25 +35,132 @@
 
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
-			<section>
+			<section class="center">
 				<!-- <h1>Node.js Interactive 2015</h1> -->
 				<h3>Peer-to-Peer Numeric Computing with JavaScript</h3>
 				<p>
-					<small><a href="https://github.com/kgryte">Athan Reines</a> / <a href="http://twitter.com/kgryte">@kgryte</a></small>
+					<small><a href="https://github.com/kgryte">Athan Reines</a> / <a href="https://twitter.com/kgryte">@kgryte</a></small>
 				</p>
 			</section>
 
-			<section>
+			<section class="center">
 				<p>...about me</p>
 			</section>
 
 			<section>
-				<h2>Code</h2>
+				<div class="row">
+					<div class="column column-6">Oxford University Logo</div>
+					<div class="column column-6">Decoded Logo</div>
+				</div>
+				<div class="row">
+					<div class="column column-6">Nodeprime</div>
+					<div class="column column-6">Vurb</div>
+				</div>
+			</section>
+
+			<section class="center">
 				<pre><code class="hljs" data-trim contenteditable>
 function beep() {
     console.log( 'boop' );
 }
 				</code></pre>
+			</section>
+
+			<section>
+				<h2>Motivations</h2>
+				<ul>
+					<li class="fragment">In-browser analysis</li>
+					<li class="fragment">Decreased server load</li>
+					<li class="fragment">Visualization environment</li>
+					<li class="fragment">Streams</li>
+					<li class="fragment">JSON</li>
+					<li class="fragment">Performance</li>
+					<li class="fragment">Ubiquity</li>
+					<li class="fragment">CLI</li>
+					<li class="fragment">Electron</li>
+					<li class="fragment">Web Technologies</li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li>
+							The browser is a powerful IDE.
+						</li>
+						<li>
+							Easier to scale. Leveraging the client enables less server infrastructure (outsourcing computation).
+						</li>
+						<li>
+							Visualization already happens in the browser. Every solution wants to display D3 and WebGL plots. But every solution which does so requires complex communication logic.
+						</li>
+						<li>
+							Streams API: while nothing inherent to JavaScript itself, its prevalence as a programming pattern facilitates a different way of thinking about problems compared to the procedural paradigms found in MATLAB, etc.
+						</li>
+						<li>
+							JSON is a first-class citizen. Often in other languages, considerable time is spent marshalling and unmarshalling data from JSON. While JSON is still marshalled/unmarshalled, support for JSON is built-in and 1:1 correspondence between file structure and program structure. Additionally, JSON facilitates different data access patterns. And lastly, JSON is a predominant transport format for the web and almost any API.
+						</li>
+						<li>
+							The JavaScript runtime environment is an environment which is under constant pressure to run faster. In other languages, you simply choose a different language if you want to go faster; just kind of accepted. With JavaScript, ain't going to go away anytime soon and don't have the luxury to use some other "faster" language. We see all sorts of optimizations from the compiler on up: code invariant loop motion, dead code elimination, cache inlining, etc. These may happen elsewhere, but I hypothesize with much less fervor.
+						</li>
+						<li>
+							JavaScript is everywhere. Almost everything either already runs or supports running a browser. Distribution is streamlined.
+						</li>
+						<li>
+							Creating (general purpose) command-line utilities is easy and an accepted practice. Not the case with other environments; e.g., MATLAB, Python, R.
+						</li>
+						<li>
+							Straightforward to take a browser app and make it a desktop application.
+						</li>
+						<li>
+							"Natively" supported browser technologies; e.g., WebRTC, WebGL, audio, video, etc. Basically, built-in drivers. Hard to find in other environments.
+						</li>
+					</ul>
+				</aside>
+			</section>
+
+			<section class="center">
+				<h2>Wishlist</h2>
+				<ul>
+					<li class="fragment">Int, <a href="https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/js-ctypes_reference/Int64">Int64</a></li>
+					<li class="fragment"><a href="https://en.wikipedia.org/wiki/WebCL">WebCL</a></li>
+					<li class="fragment"><a href="https://hacks.mozilla.org/2014/10/introducing-simd-js/">SIMD (long)</a></li>
+					<!--
+						polyfill: https://github.com/tc39/ecmascript_simd/blob/master/src/ecmascript_simd.js
+
+						Intel announcement: https://01.org/blogs/tlcounts/2014/bringing-simd-javascript
+
+						MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD
+					-->
+					<li class="fragment"><a href="http://www.2ality.com/2013/12/paralleljs.html">Parallel Computing</a></li>
+					<li class="fragment"><a href="http://www.2ality.com/2011/12/fake-operator-overloading.html">Operator Overloading</a></li>
+					<!--
+						operator-overloading-js: https://github.com/kushal-likhi/operator-overloading-js
+
+						paper.js: http://scratchdisk.com/posts/operator-overloading
+
+						paper.js src: https://github.com/paperjs/paper.js/blob/master/src/core/PaperScript.js
+					-->
+				</ul>
+			</section>
+
+			<section>
+				<h2>Contributors</h2>
+				<div class="row">
+					<div class="column column-4">Philipp Photo</div>
+					<div class="column column-4">Robert Photo</div>
+					<div class="column column-4">Rebekah Photo</div>
+				</div>
+			</section>
+
+			<section class="center">
+				<h2>Contact</h2>
+				<ul>
+					<li><a href="https://github.com/kgryte">github/kgryte</a></li>
+					<li><a href="https://twitter.com/kgryte">@kgryte</a></li>
+					<li><a href="mailto:kgryte@gmail.com">kgryte@gmail.com</a></li>
+				</ul>
+			</section>
+
+			<section class="center">
+				<h2>Appendix</h2>
 			</section>
 
 		</div>
