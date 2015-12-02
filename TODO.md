@@ -30,7 +30,9 @@ TODO
 	-	register to receive updates and news regarding the project
 12. add shortcuts to skip slides
 	-	skip+1, skip+2, skip-1, skip-2, etc.
-13. 
+13. update project logos
+	-	no white border
+14. 
 
 
 
