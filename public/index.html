@@ -14,6 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/white.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -39,7 +40,7 @@
 				<!-- <h1>Node.js Interactive 2015</h1> -->
 				<h3>Peer-to-Peer Numeric Computing with JavaScript</h3>
 				<p>
-					<small><a href="https://github.com/kgryte">Athan Reines</a> / <a href="https://twitter.com/kgryte">@kgryte</a></small>
+					<small><a href="https://github.com/kgryte"><i class="fa fa-github"></i> Athan Reines</a> / <a href="https://twitter.com/kgryte"><i class="fa fa-twitter"></i> @kgryte</a></small>
 				</p>
 				<aside class="notes">
 					Hi! My name is... And my talk is...
@@ -48,14 +49,14 @@
 
 			<section class="center">
 				<div class="row">
-					<ul class="column column-12">
-						<li class="fragment">Intro</li>
-						<li class="fragment">Overview</li>
-						<li class="fragment">Motivations</li>
-						<li class="fragment">Numeric Computing</li>
-						<li class="fragment">Peer-to-Peer</li>
-						<li class="fragment">Future Work</li>
-						<li class="fragment">Wrap-up</li>
+					<ul class="fa-ul column column-12">
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Intro</li>
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Overview</li>
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Motivations</li>
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Numeric Computing</li>
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Peer-to-Peer</li>
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Future Work</li>
+						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Wrap-up</li>
 					</ul>
 				</div>
 				<aside class="notes">
@@ -82,12 +83,20 @@
 
 			<section>
 				<div class="row">
-					<div class="column column-6">Oxford University Logo</div>
-					<div class="column column-6">Decoded Logo</div>
+					<div class="column column-6 fragment">
+						<a href="https://groups.physics.ox.ac.uk/genemachines/group/"><img src="img/oxford_university_crest_200x239px.png" alt="University of Oxford" class="undecorated"></a>
+					</div>
+					<div class="column column-6 fragment">
+						<a href="https://decoded.com/en-us/"><img src="img/decoded_200x200px.png" alt="Decoded" class="undecorated"></a>
+					</div>
 				</div>
 				<div class="row">
-					<div class="column column-6">Nodeprime</div>
-					<div class="column column-6">Vurb</div>
+					<div class="column column-6 fragment">
+						<a href="http://nodeprime.com"><img src="img/nodeprime_241x155px.png" alt="Nodeprime" class="undecorated"></a>
+					</div>
+					<div class="column column-6 fragment">
+						<a href="http://vurb.com"><img src="img/vurb_241x93px.png" alt="Vurb" class="undecorated"></a>
+					</div>
 				</div>
 				<aside class="notes">
 					<ul>
@@ -131,35 +140,72 @@
 			</section>
 
 			<section class="center">
-				<h2>Ubiquity</h2>
+				<h2><a href="http://stackoverflow.com/research/developer-survey-2015#tech-lang">Ubiquity</a></h2>
 				<aside class="notes">
-					JavaScript is everywhere. Almost everything either already runs or supports running a browser. Distribution is streamlined.
+					<p>
+						JavaScript is everywhere. Almost everything either already runs or supports running a browser. Distribution is streamlined.
+					</p>
+					<ul>
+						<li><a href="http://githut.info/">Githut</a></li>
+						<li><a href="http://www.modulecounts.com/">Module Counts</a></li>
+					</ul>
 				</aside>
 			</section>
 
 			<section class="center">
-				<h2>Performance</h2>
+				<h2><a href="http://julialang.org/">Performance</a></h2>
 				<aside class="notes">
-					The JavaScript runtime environment is an environment which is under constant pressure to run faster. In other languages, you simply choose a different language if you want to go faster; just kind of accepted. With JavaScript, ain't going to go away anytime soon and don't have the luxury to use some other "faster" language. We see all sorts of optimizations from the compiler on up: code invariant loop motion, dead code elimination, cache inlining, etc. These may happen elsewhere, but I hypothesize with much less fervor.
+					<p>
+						The JavaScript runtime environment is an environment which is under constant pressure to run faster. In other languages, you simply choose a different language if you want to go faster; just kind of accepted. With JavaScript, ain't going to go away anytime soon and don't have the luxury to use some other "faster" language. We see all sorts of optimizations from the compiler on up: code invariant loop motion, dead code elimination, cache inlining, etc. These may happen elsewhere, but I hypothesize with much less fervor.
+					</p>
+					<ul>
+						<li><a href="http://julialang.org/">Julia Benchmarks</a></li>
+						<li><a href="https://github.com/JuliaLang/julia/tree/master/test/perf/micro">Julia Benchmarks (source)</a></li>
+						<li><a href="http://mrale.ph/blog/2011/12/18/v8-optimization-checklist.html">V8 Optimization</a></li>
+						<li><a href="http://mrale.ph/blog/2012/12/15/microbenchmarks-fairy-tale.html">Microbenchmarks</a></li>
+						<li><a href="http://mrale.ph/talks/lxjs2013/#/">Compiler Optimizations</a></li>
+						<li><a href="http://mrale.ph/talks/webrebels2014/#/">Benchmarking</a></li>
+						<li><a href="http://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html">IRHydra</a></li>
+						<li><a href="http://benchmarksgame.alioth.debian.org/">The Computer Language Benchmarks Game</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Asm.js">Asm.js</a></li>
+					</ul>
 				</aside>
 			</section>
 
-			<section class="center">
-				<h2>Visualization</h2>
+			<section class="center" data-background="img/d3js_alpha_15.png">
+				<h2><a href="http://d3js.org/">Visualization</a></h2>
 				<aside class="notes">
 					Visualization already happens in the browser. Every solution wants to display D3 and WebGL plots. But every solution which does so requires complex communication logic.
 				</aside>
 			</section>
 
 			<section class="center">
-				<h2>JSON</h2>
+				<h2><a href="http://www.json.org/">JSON</a></h2>
+
+				<pre><code class="hljs" contenteditable>
+  {
+    "type": "Matrix",
+    "dtype": "int8",
+    "shape": [5,2],
+    "offset": 0,
+    "strides": [2,1],
+    "raw": true,
+    "data": [4,2,13,1,1,8,21,9,9,11]
+  }
+				</code></pre>
+
 				<aside class="notes">
 					JSON is a first-class citizen. Often in other languages, considerable time is spent marshalling and unmarshalling data from JSON. While JSON is still marshalled/unmarshalled, support for JSON is built-in and 1:1 correspondence between file structure and program structure. Additionally, JSON facilitates different data access patterns. And lastly, JSON is a predominant transport format for the web and almost any API.
 				</aside>
 			</section>
 
 			<section class="center">
-				<h2>Streams</h2>
+				<h2><a href="https://nodejs.org/api/stream.html">Streams</a></h2>
+
+				<pre><code class="hljs" contenteditable>
+  source.pipe( transform ).pipe( transform ).pipe( destination );
+				</code></pre>
+
 				<aside class="notes">
 					Streams API: while nothing inherent to JavaScript itself, its prevalence as a programming pattern facilitates a different way of thinking about problems compared to the procedural paradigms found in MATLAB, etc.
 				</aside>
@@ -180,14 +226,19 @@
 			</section>
 
 			<section class="center">
-				<h2>CLI</h2>
+				<h2><a href="http://shapeshed.com/command-line-utilities-with-nodejs/">CLI</a></h2>
+
+				<pre><code class="hljs" contenteditable>
+$ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
+				</code></pre>
+
 				<aside class="notes">
 					Creating (general purpose) command-line utilities is easy and an accepted practice. Not the case with other environments; e.g., MATLAB, Python, R.
 				</aside>
 			</section>
 
 			<section class="center">
-				<h2>Electron</h2>
+				<h2><a href="http://electron.atom.io/">Electron</a></h2>
 				<aside class="notes">
 					Straightforward to take a browser app and make it a desktop application.
 				</aside>
@@ -252,7 +303,10 @@
 						<div class="profile_pic">
 							<a href="https://github.com/planeshifter"><img src="img/contributors/philipp.jpeg" alt="Philipp Burckhardt"></a>
 							<p>
-								<a href="https://github.com/planeshifter">Philipp Burckhardt</a>
+								<a href="https://github.com/planeshifter"><i class="fa fa-github"></i> Philipp Burckhardt</a>
+							</p>
+							<p>
+								<a href="https://twitter.com/burckhap"><i class="fa fa-twitter"></i> @burckhap</a>
 							</p>
 						</div>
 					</div>
@@ -260,7 +314,7 @@
 						<div class="profile_pic">
 							<a href="https://github.com/rgizz"><img src="img/contributors/robert.jpeg" alt="Robert Gislason"></a>
 							<p>
-								<a href="https://github.com/rgizz">Robert Gislason</a>
+								<a href="https://github.com/rgizz"><i class="fa fa-github"></i> Robert Gislason</a>
 							</p>
 						</div>
 					</div>
@@ -269,7 +323,10 @@
 							<a href="https://github.com/rebekahj"><img src="img/contributors/rebekah.png" alt="Rebekah Smith"
 								></a>
 							<p>
-								<a href="https://github.com/rebekahj">Rebekah Smith</a>
+								<a href="https://github.com/rebekahj"><i class="fa fa-github"></i> Rebekah Smith</a>
+							</p>
+							<p>
+								<a href="https://twitter.com/froodette"><i class="fa fa-twitter"></i> @froodette</a>
 							</p>
 						</div>
 					</div>
@@ -287,11 +344,16 @@
 			</section>
 
 			<section class="center">
-				<h2>Contact</h2>
-				<ul>
-					<li><a href="https://github.com/kgryte">github/kgryte</a></li>
-					<li><a href="https://twitter.com/kgryte">@kgryte</a></li>
-					<li><a href="mailto:kgryte@gmail.com">kgryte@gmail.com</a></li>
+				<ul class="fa-ul">
+					<li>
+						<a href="https://github.com/kgryte"><i class="fa-li fa fa-github"></i> github/kgryte</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/kgryte"><i class="fa-li fa fa-twitter"></i> @kgryte</a>
+					</li>
+					<li>
+						<a href="mailto:kgryte@gmail.com"><i class="fa-li fa fa-envelope-o"></i> kgryte@gmail.com</a>
+					</li>
 				</ul>
 				<aside class="notes">
 					<p>
@@ -353,6 +415,15 @@
 					</li>
 					<li>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD">MDN</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="center">
+				<h2>Parallel Computing</h2>
+				<ul>
+					<li>
+						<a href="https://github.com/lars-t-hansen/ecmascript_sharedmem/blob/master/TUTORIAL.md">Shared Memory Web Workers</a>
 					</li>
 				</ul>
 			</section>

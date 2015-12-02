@@ -1,15 +1,44 @@
 
 
+.reveal a {
+	color: #222;
+	text-decoration: none;
+}
+
+.reveal h2 a {
+	border-bottom: 1px dashed #222;
+}
+
+.reveal h2 a:hover {
+	border-bottom: 1px dashed #222;
+}
+
+.reveal section img.undecorated {
+	border: none;
+	box-shadow: none;
+	background: none;
+}
+
+.reveal .heading-overlay {
+	padding: 40px 0;
+	background-color: rgba(255,255,255,1);
+}
+
+.reveal .fa-ul {
+	list-style: none;
+}
+
 .reveal .profile_pic img {
 	margin: 0;
 	height: 200px;
 	width: 200px;
 
-	border: none!important;
+	border: none;
 	border-radius: 50%;
 }
 
 .reveal .profile_pic p {
 	font-size: 18px;
 	text-align: center;
+	margin: 2px auto;
 }
