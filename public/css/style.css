@@ -1,1 +1,15 @@
 
+
+.reveal .profile_pic img {
+	margin: 0;
+	height: 200px;
+	width: 200px;
+
+	border: none!important;
+	border-radius: 50%;
+}
+
+.reveal .profile_pic p {
+	font-size: 18px;
+	text-align: center;
+}
