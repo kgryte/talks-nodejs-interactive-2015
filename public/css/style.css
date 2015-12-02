@@ -42,3 +42,14 @@
 	text-align: center;
 	margin: 2px auto;
 }
+
+.slide-project-logos img {
+	margin: 0;
+	width: 150px;
+	height: 150px;
+}
+
+.slide-project-logos .column p {
+	margin: 0;
+	font-size: 24px;
+}
