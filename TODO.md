@@ -7,7 +7,7 @@ TODO
 	-	examples?
 3. presentation template
 	- 	generator (`@kgryte/generator-reveal-presentation`)
-4. 
+4. get links from webdata issues and add to Appendix
 5. ga
 6. instrument to track presentation metrics
 7. 
