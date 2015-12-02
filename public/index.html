@@ -42,6 +42,7 @@
 				<p>
 					<small><a href="https://github.com/kgryte"><i class="fa fa-github"></i> Athan Reines</a> / <a href="https://twitter.com/kgryte"><i class="fa fa-twitter"></i> @kgryte</a></small>
 				</p>
+
 				<aside class="notes">
 					Hi! My name is... And my talk is...
 				</aside>
@@ -59,6 +60,7 @@
 						<li class="fragment"><i class="fa-li fa fa-angle-right"></i> Wrap-up</li>
 					</ul>
 				</div>
+
 				<aside class="notes">
 					<p>
 						Provide a run-down of what the talk will include.
@@ -76,6 +78,7 @@
 
 			<section class="center">
 				<h2>Intro</h2>
+
 				<aside class="notes">
 					Brief overview of my background...
 				</aside>
@@ -98,6 +101,7 @@
 						<a href="http://vurb.com"><img src="img/vurb_241x93px.png" alt="Vurb" class="undecorated"></a>
 					</div>
 				</div>
+
 				<aside class="notes">
 					<ul>
 						<li>Was a research scientist in Biological Physics at the University of Oxford and applied machine learning algorithms to biological time series.</li>
@@ -113,6 +117,7 @@
 
 			<section>
 				(logos!)
+
 				<aside class="notes">
 					Currently, I am working full-time on open-source tools for numeric computation in JavaScript.
 				</aside>
@@ -120,6 +125,7 @@
 
 			<section class="center">
 				<h2>Overview</h2>
+
 				<aside class="notes">
 					What do people traditionally use to analyze data?
 				</aside>
@@ -134,6 +140,7 @@
 
 			<section class="center">
 				<h2>Motivations</h2>
+
 				<aside class="notes">
 					So now that we have covered the traditional tools and I previously mentioned that I actively use JavaScript when solving real-world problems, I want to spend some time on the motivations for why I choose JavaScript over other platforms...
 				</aside>
@@ -141,6 +148,7 @@
 
 			<section class="center">
 				<h2>Why JavaScript?</h2>
+
 				<aside class="notes">
 					One of the first questions, if not THE first question, I am asked when I tell people that I do much of my data analysis work in JavaScript is: Why JavaScript? Why not X? Why is this environment/platform any more suitable than already established platforms built on Python, R, Julia, etc? Any inherent advantages?
 				</aside>
@@ -148,6 +156,7 @@
 
 			<section class="center">
 				<h2><a href="http://stackoverflow.com/research/developer-survey-2015#tech-lang">Ubiquity</a></h2>
+
 				<aside class="notes">
 					<p>
 						JavaScript is everywhere. Almost everything either already runs or supports running a browser. Distribution is streamlined.
@@ -161,6 +170,7 @@
 
 			<section class="center">
 				<h2><a href="http://julialang.org/">Performance</a></h2>
+
 				<aside class="notes">
 					<p>
 						The JavaScript runtime environment is an environment which is under constant pressure to run faster. In other languages, you simply choose a different language if you want to go faster; just kind of accepted. With JavaScript, ain't going to go away anytime soon and don't have the luxury to use some other "faster" language. We see all sorts of optimizations from the compiler on up: code invariant loop motion, dead code elimination, cache inlining, etc. These may happen elsewhere, but I hypothesize with much less fervor.
@@ -220,6 +230,7 @@
 
 			<section class="center">
 				<h2>In-browser analysis</h2>
+
 				<aside class="notes">
 					The browser is a powerful IDE.
 				</aside>
@@ -227,8 +238,16 @@
 
 			<section class="center">
 				<h2>Server Load</h2>
+
 				<aside class="notes">
-					Easier to scale. Leveraging the client enables less server infrastructure (outsourcing computation).
+					<p>
+						Easier to scale. Leveraging the client enables less server infrastructure (outsourcing computation).
+					</p>
+					<ul>
+						<li><a href="http://ipython.readthedocs.org/en/stable/development/how_ipython_works.html">IPython Notebook architecture</a></li>
+						<li><a href="https://developer.rackspace.com/blog/how-did-we-serve-more-than-20000-ipython-notebooks-for-nature/">Rackspace blog post</a></li>
+						<li><a href="http://mybinder.org/">Binder Project</a></li>
+					</ul>
 				</aside>
 			</section>
 
@@ -266,6 +285,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 
 			<section class="center">
 				<h2>Web Technologies</h2>
+
 				<aside class="notes">
 					"Natively" supported browser technologies; e.g., WebRTC, WebGL, audio, video, etc. Basically, built-in drivers. Hard to find in other environments.
 				</aside>
@@ -303,6 +323,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 						<a href="https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723#.8cos1ynh1">Web Assembly</a>
 					</li>
 				</ul>
+
 				<aside class="notes">
 					<ul>
 						<li>Counting things, 64bit IDs which are not strings, money,...</li>
@@ -351,6 +372,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 						</div>
 					</div>
 				</div>
+
 				<aside class="notes">
 					<p>
 						This work is not solely my own. I have fantastic core contributors:
@@ -375,6 +397,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 						<a href="mailto:kgryte@gmail.com"><i class="fa-li fa fa-envelope-o"></i> kgryte@gmail.com</a>
 					</li>
 				</ul>
+
 				<aside class="notes">
 					<p>
 						If you want to reach out, can find me on Github and Twitter. If you want updates on the project, feel free to send me an email and I will add you to the mailing list.
