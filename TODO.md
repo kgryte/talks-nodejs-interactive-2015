@@ -10,9 +10,15 @@ TODO
 4. 
 5. ga
 6. instrument to track presentation metrics
-	-	state (slide)
+	-	state (slide number)
 	-	time between events
+		-	can be inferred using a delta
 	-	clock time
+	-	track window focus events
+	-	links clicked
+		-	requires intercepting event listeners
+	-	keypress events
+		-	intercept event listeners
 	-	statistics
 	-	distribution
 	- 	real-time presentation statistics :)
