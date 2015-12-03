@@ -7,7 +7,7 @@ TODO
 	-	examples?
 3. presentation template
 	- 	generator (`@kgryte/generator-reveal-presentation`)
-4. get links from webdata issues and add to Appendix
+4. 
 5. ga
 6. instrument to track presentation metrics
 	-	state (slide)
@@ -38,6 +38,7 @@ TODO
 16. for `web technologies` slide, provide icons/images representing different features
 	-	can allude to the fact that in-browser numeric computing allows new apps, like audio processing, etc.
 17. for `numeric computing`
+	-	advantage of being a "late" mover
 	-	data structures
 	-	APIs (e.g., accessor based)
 	-	command-line tools
