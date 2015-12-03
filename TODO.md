@@ -32,11 +32,27 @@ TODO
 	-	skip+1, skip+2, skip-1, skip-2, etc.
 13. update project logos
 	-	no white border
-14. 
+14. define "groups" of slides and add shortcuts to toggle their appearance
+	-	e.g., allowing for a "choose your own adventure" type presentation (based on audience, etc)
+15. 
 
 
 
 ## Other
 
 1. move gists into separate repos
-2. 
+2. create module which takes an object's properties and puts them in the global scope
+	-	in browser, `window`
+	-	in node, local "global" context
+		-	not possible; can only access `GLOBAL` variable --> obviously this will cause side-effects
+		-	actually, may be able to use `eval`
+	-	method "destructure"
+		-	`destructure-all`
+		-	`object-destructure-all`
+		-	...
+		-	maybe not destructure, as this has certain implications in terms of static code analysis
+		-	...
+		-	`methods-to-context`
+			-	option for `global` versus local scope
+3. update main validation repo
+4. 

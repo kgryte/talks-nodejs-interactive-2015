@@ -53,3 +53,18 @@
 	margin: 0;
 	font-size: 24px;
 }
+
+.slide-software a {
+	display: block;
+	height: 200px;
+	line-height: 200px;
+}
+
+.slide-software img {
+	margin: 0;
+}
+
+.slide-software .column p {
+	margin: 0;
+	font-size: 24px;
+}
