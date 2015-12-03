@@ -34,7 +34,25 @@ TODO
 	-	no white border
 14. define "groups" of slides and add shortcuts to toggle their appearance
 	-	e.g., allowing for a "choose your own adventure" type presentation (based on audience, etc)
-15. 
+15. for `server-load` slide, add Jupyter notebook architecture diagram
+16. for `web technologies` slide, provide icons/images representing different features
+	-	can allude to the fact that in-browser numeric computing allows new apps, like audio processing, etc.
+17. for `numeric computing`
+	-	data structures
+	-	APIs (e.g., accessor based)
+	-	command-line tools
+		-	be cool to show a pipe demo
+	- 	demo in browser
+18. for `p2p`
+	-	various RPC flavors
+19. 
+
+
+## Ideas
+
+1. Using browser audio API to take in speech and run HMMs in browser for speech recognition
+2. If I recall correctly, someone was able to use camera API to do real-time object recognition
+3. 
 
 
 
