@@ -23,13 +23,11 @@ From the top-level directory,
 $ python -m SimpleHTTPServer 9000
 ```
 
-and navigate to
+and, in your browser, navigate to
 
 ```
 http://127.0.0.1:9000/public
 ```
-
-in your browser.
 
 
 ---
