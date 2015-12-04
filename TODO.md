@@ -54,8 +54,7 @@ TODO
 	-	various RPC flavors
 19. bit of extra design
 	-	slides with just headings...maybe a bit of color, like a solid bar about 1/3 from bottom with white text, etc.
-20. add Node.js logo to title slide
-21. 
+20. 
 
 
 ## Ideas
