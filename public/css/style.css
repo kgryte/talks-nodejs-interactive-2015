@@ -77,3 +77,9 @@ line {
 	stroke: #000;
 	stroke-width: 1.5px;
 }
+
+.viewer_3Dmoljs {
+	width: 400px;
+	height: 400px;
+	position: relative;
+}

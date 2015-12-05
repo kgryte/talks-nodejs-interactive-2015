@@ -126,6 +126,36 @@
 			</section>
 
 			<section class="center">
+				<div class="rows">
+					<div class="column column-6">
+						<div
+							class='viewer_3Dmoljs'
+							data-href='js/lib/3dmol/2por.pdb'
+							data-backgroundcolor='0xffffff'
+							data-select='{"hetflag":false}'
+							data-style='{"cartoon":{"color":"spectrum"}}'>
+						</div>
+					</div>
+					<div class="column column-6">
+						<div
+							class='viewer_3Dmoljs'
+							data-href='js/lib/3dmol/1YCR.pdb'
+							data-backgroundcolor='0xffffff'
+							data-select1='chain:A'
+							data-style1='cartoon:color=spectrum'
+							data-surface1='opacity:.7;color:white'
+							data-select2='chain:B'
+							data-style2='stick'>
+						</div>
+      				</div>
+      			</div>
+
+      			<aside class="notes">
+      				Rendered using <a href="https://github.com/3dmol/3Dmol.js">3Dmol.js</a>. Rendering molecules often requires complex linear algebra, especially when computing surfaces. The molecule on the left is <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=2por">porin</a>, an integral membrane protein, and the molecule on the right is <a href="">MDM2</a>, an oncoprotein..
+      			</aside>
+			</section>
+
+			<section class="center">
 				<h2>Why JavaScript?</h2>
 
 				<aside class="notes">
@@ -436,7 +466,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 			</section>
 
 			<section class="center">
-				<h2>Interlude</h2>
+				<h2>Projects</h2>
 
 				<aside class="notes">
 					Brief overview of my background...
@@ -795,6 +825,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 	</div>
 
 	<script src="js/lib/d3/d3.v3.min.js"></script>
+	<script src="js/lib/3dmol/3dmol.min.js"></script>
 	<script src="js/lib/reveal/head.min.js"></script>
 	<script src="js/lib/reveal/reveal.js"></script>
 	<script src="js/lib/reveal/init.js"></script>
