@@ -301,13 +301,70 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 				</aside>
 			</section>
 
-			<section class="slide-project-logos">
+			<section class="center slide-project-logos">
 				<div class="row">
-					<div class="column column-4 fragment">
+					<div class="column column-4">
 						<a href="https://github.com/dstructs"><img src="img/projects/dstructs_logo_209x209px.png" alt="Data Structures" class="undecorated"></a>
 						<p>
 							<a href="https://github.com/dstructs">Data Structures</a>
 						</p>
+					</div>
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/dstructs/array">arrays</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/dstructs/matrix">matrices</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/dstructs/ndarray">ndarrays (in progress)</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/dstructs/data-frame">data frames (in progress)</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<aside class="notes">
+
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code style="min-height:520px" class="hljs" contenteditable>
+ var matrix = require( 'dstructs-matrix' );
+
+ var mat = matrix( [5,2], 'int16' );
+ /*
+   [ 0 0
+     0 0
+     0 0
+     0 0
+     0 0 ]
+ */
+
+ mat.sset( '1:3,:', 5 );
+ /*
+   [ 0 0
+     5 5
+     5 5
+     0 0
+     0 0 ]
+ */
+
+				</code></pre>
+
+				<aside class="notes">
+
+				</aside>
+			</section>
+
+			<section class="slide-project-logos">
+				<div class="row">
+					<div class="column column-4 fragment">
+
 					</div>
 					<div class="column column-4 fragment">
 						<a href="https://github.com/validate-io"><img src="img/projects/validate_logo_209x209px.png" alt="Validate.io" class="undecorated"></a>
