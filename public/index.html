@@ -568,38 +568,197 @@ var hex = randc();
 				</aside>
 			</section>
 
-			<section class="slide-project-logos">
+			<section class="center slide-project-logos">
 				<div class="row">
-					<div class="column column-4 fragment">
+					<div class="column column-4">
 						<a href="http://flow-io.com"><img src="img/projects/flow_logo_209x209px.png" alt="Flow.io" class="undecorated"></a>
 						<p>
 							<a href="http://flow-io.com">Streams</a>
 						</p>
 					</div>
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/flow-io/split">split</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/flow-io/map">map</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/flow-io/join">join</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/flow-io">statistics</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
 				</div>
+
+				<aside class="notes">
+					Streams!
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" style="min-height:520px" contenteditable>
+var splitStream = require( 'flow-split' );
+var mapStream = require( 'flow-map' );
+var joinStream = require( 'flow-join' );
+
+function map( value, idx ) {
+  value = parseFloat( value );
+  return (value * idx).toString();
+}
+
+var sStream = splitStream( {'sep': '/\r?\n/'} );
+var jStream = joinStream( {'sep': '\n'} );
+var mStream = mapStream( map );
+
+process.stdin
+  .pipe( sStream )
+  .pipe( mStream )
+  .pipe( jStream )
+  .pipe( process.stdout );
+				</code></pre>
+
+				<aside class="notes">
+					Simple map stream which scales each streamed value...
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" contenteditable>
+ $ echo -n $'1\n2\n3\n4\n' | flow-map ./transform.js | &lt;stdin&gt;
+				</code></pre>
+
+				<aside class="notes">
+					Also available as CLI tool...
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
 				<div class="row">
-					<div class="column column-4 fragment">
+					<div class="column column-4">
 						<a href="https://github.com/figure-io"><img src="img/projects/figure_logo_209x209px.png" alt="Figure.io" class="undecorated"></a>
 						<p>
 							<a href="https://github.com/figure-io">Charts</a>
 						</p>
 					</div>
-					<div class="column column-4 fragment">
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/figure-io/polymer-timeseries/tree/develop">timeseries</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/figure-io/polymer-scatterplot">scatterplot</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/figure-io/polymer-graph-forced-directed">network</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/figure-io/polymer-matrix-diagram">matrix diagrams</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<aside class="notes">
+					Charts! Built as web components using Polymer.
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<div class="row">
+					<div class="column column-4">
 						<a href="https://github.com/datasets-io"><img src="img/projects/datasets_logo_209x209px.png" alt="Datasets" class="undecorated"></a>
 						<p>
 							<a href="https://github.com/datasets-io">Data</a>
 						</p>
 					</div>
-					<div class="column column-4 fragment">
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/datasets-io/iris">Iris</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/datasets-io/liu-negative-opinion-words-en">sentiment analysis</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/datasets-io/male-first-names-us-frequency">first name frequencies</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<aside class="notes">
+					<ul>
+						<li>Canonical datasets like Edgar Anderson's Iris data</li>
+						<li>lexicons used for sentiment analysis</li>
+						<li>select census datasets</li>
+					</ul>
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" style="min-height:480px" contenteditable>
+ var toMatrix = require( 'dstructs-to-matrix' );
+ var iris = require( 'datasets-iris' );
+
+ var mat = toMatrix([
+   iris.setosa.sepal.len,
+   iris.setosa.sepal.width,
+   iris.setosa.petal.len,
+   iris.setosa.petal.width,
+   iris.versicolor.sepal.len,
+   iris.versicolor.sepal.width,
+   iris.versicolor.petal.len,
+   iris.versicolor.petal.width,
+   iris.virginica.sepal.len,
+   iris.virginica.sepal.width,
+   iris.virginica.petal.len,
+   iris.virginica.petal.width
+ ]);
+				</code></pre>
+
+				<aside class="notes">
+					Datasets are available as NPM modules.
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<div class="row">
+					<div class="column column-4">
 						<a href="http://inotebook.io"><img src="img/projects/inotebook_logo_209x209px.png" alt="inotebook" class="undecorated"></a>
 						<p>
 							<a href="http://inotebook.io">Notebook</a>
 						</p>
 					</div>
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> interactive
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> preloaded
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...work in progress
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<aside class="notes">
-					Currently, I am working full-time on open-source tools for numeric computation in JavaScript.
+					Preloaded with all the aforementioned goodies. Ongoing...
 				</aside>
 			</section>
 
