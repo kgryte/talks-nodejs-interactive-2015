@@ -527,14 +527,49 @@ var mat = randn( [3,2], {'dtype': 'float64'} );
 				</aside>
 			</section>
 
-			<section class="slide-project-logos">
+			<section class="center slide-project-logos">
 				<div class="row">
-					<div class="column column-4 fragment">
+					<div class="column column-4">
 						<a href="https://github.com/rand-io"><img src="img/projects/rand_logo_209x209px.png" alt="Random data generation" class="undecorated"></a>
 						<p>
 							<a href="https://github.com/rand-io">Random</a>
 						</p>
 					</div>
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/compute-io/lcg">lcg</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/rand-io">random data</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<aside class="notes">
+					Random data generation...
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" contenteditable>
+var randc = require( 'rand-color-hexadecimal' );
+
+var hex = randc();
+// returns '&lt;color&gt;'; e.g., '474747'
+				</code></pre>
+
+				<aside class="notes">
+					Generate a random hexadecimal color...
+				</aside>
+			</section>
+
+			<section class="slide-project-logos">
+				<div class="row">
 					<div class="column column-4 fragment">
 						<a href="http://flow-io.com"><img src="img/projects/flow_logo_209x209px.png" alt="Flow.io" class="undecorated"></a>
 						<p>
