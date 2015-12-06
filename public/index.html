@@ -472,14 +472,63 @@ var mu = mean( mat, {'dim': 2} );
 				</aside>
 			</section>
 
-			<section class="slide-project-logos">
+			<section class="center slide-project-logos">
 				<div class="row">
-					<div class="column column-4 fragment">
+					<div class="column column-4">
 						<a href="https://github.com/distributions-io"><img src="img/projects/distributions_logo_209x209px.png" alt="Statistical distributions" class="undecorated"></a>
 						<p>
 							<a href="https://github.com/distributions-io">Distributions</a>
 						</p>
 					</div>
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/distributions-io/normal-pdf">probability density functions</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/distributions-io/normal-mgf">moment generating functions</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/distributions-io/normal-random">random variates</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/distributions-io/normal-quantile">quantiles</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<aside class="notes">
+					Statistical distributions.
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" contenteditable>
+var randn = require( 'distributions-normal-random' );
+
+// Seed the generator:
+randn.seed = 52;
+
+// Generate a matrix of random variates:
+var mat = randn( [3,2], {'dtype': 'float64'} );
+/*
+  [ -0.482  0.274
+     0.725  1.113
+     0.608  1.050 ]
+*/
+				</code></pre>
+
+				<aside class="notes">
+					Seed the generator and generate a matrix of random variates...
+				</aside>
+			</section>
+
+			<section class="slide-project-logos">
+				<div class="row">
 					<div class="column column-4 fragment">
 						<a href="https://github.com/rand-io"><img src="img/projects/rand_logo_209x209px.png" alt="Random data generation" class="undecorated"></a>
 						<p>

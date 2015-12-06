@@ -73,7 +73,9 @@ TODO
 23. add shortcuts
 	- 	scratch slide
 	- 	appendix
-24. 
+24. create "discussions" repos for each organization
+	- 	link to these in prez and direct audience feedback here
+25. 
 
 
 ## Ideas
