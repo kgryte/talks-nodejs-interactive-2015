@@ -69,7 +69,7 @@ TODO
 	-	brief desc
 	-	example modules
 21. maybe point to personal NPM page to encourage viewers to try the modules out
-22. add scratch slide
+22. 
 23. add shortcuts
 	- 	scratch slide
 	- 	appendix
