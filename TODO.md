@@ -7,8 +7,19 @@ TODO
 	-	examples?
 3. presentation template
 	- 	generator (`@kgryte/generator-reveal-presentation`)
+	- 	sub-generators for creating certain types of slides
+		- 	basic
+		- 	code editor
+		- 	title
+		- 	splash
+	- 	include a basic template with title and appendix
+	- 	ability to write slides in separate files; e.g., in Markdown, and include a build step to compile a presentation
+		- 	e.g., `data-slide="filename"`
+	- 	watch a slide directory and auto-compile and refresh browser
 4. 
 5. ga
+	-	github pages?
+	-	or personal server?
 6. instrument to track presentation metrics
 	-	state (slide number)
 	-	time between events
@@ -54,7 +65,15 @@ TODO
 	-	various RPC flavors
 19. bit of extra design
 	-	slides with just headings...maybe a bit of color, like a solid bar about 1/3 from bottom with white text, etc.
-20. 
+20. split projects into separate slides
+	-	brief desc
+	-	example modules
+21. maybe point to personal NPM page to encourage viewers to try the modules out
+22. add scratch slide
+23. add shortcuts
+	- 	scratch slide
+	- 	appendix
+24. 
 
 
 ## Ideas
