@@ -328,7 +328,7 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 				</div>
 
 				<aside class="notes">
-
+					Data structures: arrays, matrices, ndarrays, data-frames.
 				</aside>
 			</section>
 
@@ -357,28 +357,122 @@ $ cat ./data.csv | node ./bin/filter | node ./bin/stats > ./out.txt
 				</code></pre>
 
 				<aside class="notes">
-
+					An example creating a <a href="https://github.com/dstructs/matrix">matrix</a>.
 				</aside>
 			</section>
 
-			<section class="slide-project-logos">
+			<section class="center slide-project-logos">
 				<div class="row">
-					<div class="column column-4 fragment">
-
-					</div>
-					<div class="column column-4 fragment">
+					<div class="column column-4">
 						<a href="https://github.com/validate-io"><img src="img/projects/validate_logo_209x209px.png" alt="Validate.io" class="undecorated"></a>
 						<p>
 							<a href="https://github.com/validate-io">Validation</a>
 						</p>
 					</div>
-					<div class="column column-4 fragment">
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/validate-io/positive-zero">positive zero</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/validate-io/safe-integer">safe integer</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/validate-io/permutation">permutation</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/validate-io/positive-integer-array">positive integer array</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<aside class="notes">
+					Validators.
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" contenteditable>
+var isUint32Array = require( 'validate.io-uint32array' );
+var isPosIntArray = require( 'validate.io-positive-integer-array' );
+
+function foo( x ) {
+  if ( !isUint32Array( x ) && !isPosIntArray( x ) ) {
+    throw new TypeError( 'invalid input argument. Value: `'+x+'`.' );
+  }
+  ...
+}
+				</code></pre>
+
+				<aside class="notes">
+					An example using validation modules.
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<div class="row">
+					<div class="column column-4">
 						<a href="http://compute-io.com"><img src="img/projects/compute_logo_209x209px.png" alt="Compute.io" class="undecorated"></a>
 						<p>
 							<a href="http://compute-io.com">Computation</a>
 						</p>
 					</div>
+					<div class="column column-8">
+						<ul class="fa-ul">
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/compute-io/erf">error function</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/compute-io/quantiles">quantiles</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/compute-io/fliplr">fliplr</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> <a href="https://github.com/compute-io/cosine-similarity">cosine similarity</a>
+							</li>
+							<li class="fragment">
+								<i class="fa-li fa fa-angle-right"></i> ...many others
+							</li>
+						</ul>
+					</div>
 				</div>
+
+				<aside class="notes">
+					Compute modules.
+				</aside>
+			</section>
+
+			<section class="center slide-project-logos">
+				<pre><code class="hljs" style="min-height:420px" contenteditable>
+var matrix = require( 'dstructs-matrix' );
+var mean = require( 'compute-mean' );
+
+var mat = matrix( [7,3,9,11], [2,2], 'float64' );
+/*
+  [ 7  3
+    9 11 ]
+*/
+
+// Compute the mean across the columns:
+var mu = mean( mat, {'dim': 2} );
+/*
+  [  5
+    10 ]
+*/
+
+				</code></pre>
+
+				<aside class="notes">
+					Given a matrix, compute the mean...
+				</aside>
+			</section>
+
+			<section class="slide-project-logos">
 				<div class="row">
 					<div class="column column-4 fragment">
 						<a href="https://github.com/distributions-io"><img src="img/projects/distributions_logo_209x209px.png" alt="Statistical distributions" class="undecorated"></a>
