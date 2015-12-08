@@ -12,12 +12,12 @@
       "email": "kgryte@gmail.com"
     },
     {
-    	"name": "Philipp Burckhardt",
-    	"email": "pburckhardt@outlook.com"
+      "name": "Philipp Burckhardt",
+      "email": "pburckhardt@outlook.com"
     },
     {
-    	"name": "rgizz",
-    	"email": "gztown2216@yahoo.com"
+      "name": "rgizz",
+      "email": "gztown2216@yahoo.com"
     }
   ],
   "scripts": {},
@@ -27,16 +27,28 @@
     "url": "git://github.com/kgryte/talks-nodejs-interactive-2015.git"
   },
   "keywords": [
-		"talk",
-		"nodejs",
-		"interactive",
-		"slides",
-		"presentation"
-	],
+    "talk",
+    "nodejs",
+    "interactive",
+    "slides",
+    "presentation"
+  ],
   "bugs": {
     "url": "https://github.com/kgryte/talks-nodejs-interactive-2015/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compute-mean": "^3.0.0",
+    "compute-variance": "^3.0.0",
+    "datasets-iris": "^1.0.0",
+    "debug": "^2.2.0",
+    "dstructs-matrix": "^2.1.1",
+    "export-dir-files": "^1.0.1",
+    "rpc-multistream": "^0.9.1",
+    "utils-function-name": "^1.0.0",
+    "utils-try-function": "^1.0.0",
+    "validate.io-function": "^1.0.2",
+    "webrtc-connect": "git+https://github.com/kgryte/webrtc-connect.git"
+  },
   "devDependencies": {
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x"

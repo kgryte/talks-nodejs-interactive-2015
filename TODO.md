@@ -63,8 +63,7 @@ TODO
 	-	command-line tools
 		-	be cool to show a pipe demo
 	- 	demo in browser
-18. for `p2p`
-	-	various RPC flavors
+18. 
 19. bit of extra design
 	-	slides with just headings...maybe a bit of color, like a solid bar about 1/3 from bottom with white text, etc.
 20. split projects into separate slides
@@ -72,15 +71,10 @@ TODO
 	-	example modules
 	- 	for notebook example, show screenshot
 	- 	for chart example, show screenshots (timeseries and matrix diagram)
-21. maybe point to personal NPM page to encourage viewers to try the modules out
-	- 	add to contact page at end
-22. 
-23. add shortcuts
+21. add shortcuts
 	- 	scratch slide
 	- 	appendix
-24. create "discussions" repos for each organization
-	- 	link to these in prez and direct audience feedback here
-25. 
+22. 
 
 
 ## Ideas
