@@ -22,6 +22,8 @@ TODO
 	-	or personal server?
 6. instrument to track presentation metrics
 	-	state (slide number)
+	- 	fragment
+	- 	overview mode
 	-	time between events
 		-	can be inferred using a delta
 	-	clock time
@@ -68,7 +70,10 @@ TODO
 20. split projects into separate slides
 	-	brief desc
 	-	example modules
+	- 	for notebook example, show screenshot
+	- 	for chart example, show screenshots (timeseries and matrix diagram)
 21. maybe point to personal NPM page to encourage viewers to try the modules out
+	- 	add to contact page at end
 22. 
 23. add shortcuts
 	- 	scratch slide
@@ -102,5 +107,5 @@ TODO
 		-	...
 		-	`methods-to-context`
 			-	option for `global` versus local scope
-3. update main validation repo
+3. callbackify module
 4. 
