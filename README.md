@@ -14,6 +14,12 @@ Traditionally, if you wanted to write fast code for numeric computation, you use
 $ git clone https://github.com/kgryte/talks-nodejs-interactive-2015.git
 ```
 
+and
+
+``` bash
+$ npm install
+```
+
 
 ## Usage
 
@@ -27,6 +33,44 @@ and, in your browser, navigate to
 
 ```
 http://127.0.0.1:9000/public
+```
+
+
+---
+## Examples
+
+#### Simple
+
+``` bash
+$ node ./examples/simple
+```
+
+#### TCP
+
+In one terminal,
+
+``` bash
+$ DEBUG=* node ./examples/tcp/server.js
+```
+
+and, in another terminal,
+
+``` bash
+$ DEBUG=* node ./examples/tcp/client.js
+```
+
+#### WebRTC
+
+In one terminal,
+
+``` bash
+$ DEBUG=* node ./examples/webrtc/server.js
+```
+
+and, in another terminal,
+
+``` bash
+$ DEBUG=* node ./examples/webrtc/client.js
 ```
 
 
