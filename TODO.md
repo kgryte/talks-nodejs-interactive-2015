@@ -50,8 +50,7 @@ TODO
 	-	register to receive updates and news regarding the project
 12. add shortcuts to skip slides
 	-	skip+1, skip+2, skip-1, skip-2, etc.
-13. update project logos
-	-	no white border
+13. 
 14. define "groups" of slides and add shortcuts to toggle their appearance
 	-	e.g., allowing for a "choose your own adventure" type presentation (based on audience, etc)
 15. for `server-load` slide, add Jupyter notebook architecture diagram
@@ -69,7 +68,6 @@ TODO
 	-	slides with just headings...maybe a bit of color, like a solid bar about 1/3 from bottom with white text, etc.
 20. split projects into separate slides
 	-	brief desc
-	-	example modules
 	- 	for notebook example, show screenshot
 	- 	for chart example, show screenshots (timeseries and matrix diagram)
 21. add shortcuts
