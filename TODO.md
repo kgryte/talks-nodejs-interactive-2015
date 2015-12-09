@@ -38,6 +38,7 @@ TODO
 		-	not only my presenter statistics, but number of viewers, etc.
 7. should expressiveness be added to motivations?
 	-	could include Python [link](http://nbviewer.jupyter.org/github/lmcinnes/hdbscan/blob/master/notebooks/Python%20vs%20Java.ipynb) abt HDBSCAN
+	- 	would be good to show side-by-side comparisons; e.g. this is how you do `X` in `Y` and this is how you do `X` in JS
 8. add link styling (hover, coloring, etc)
 9. for `wishlist`, remove bullets; add images
 	-	simd
