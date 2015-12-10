@@ -47,7 +47,7 @@
     "utils-function-name": "^1.0.0",
     "utils-try-function": "^1.0.0",
     "validate.io-function": "^1.0.2",
-    "webrtc-connect": "git+https://github.com/kgryte/webrtc-connect.git"
+    "webrtc-connect": "^0.2.1"
   },
   "devDependencies": {
     "jshint": "2.x.x",
